@@ -115,6 +115,7 @@ Isso cria a estrutura inicial do projeto com suporte ao fluxo SDD.
 
 * A instalação oficial deve sempre ser feita a partir do repositório GitHub
 * Pacotes com o mesmo nome fora desse repositório não são mantidos oficialmente [\[github.github.com\]](https://github.github.com/spec-kit/installation.html)
+* <a target="_blank" href="https://github.github.com/spec-kit/installation.html">Ver documentação oficial de instalação</a>
 
 ***
 
