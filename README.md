@@ -264,6 +264,29 @@ Requisitos:
 
 ***
 
+## 🔧 Implementação Fase 1 — MVP
+
+## Comando
+
+```bash
+/speckit.implement 
+```
+
+## Prompt
+
+```text
+Implemente o sistema LifeOS considerando:
+
+- Funcionalidades do MVP
+- Evolução 1 aplicada (organização de tarefas)
+- Backend com API REST
+- Persistência de dados
+- Estrutura modular
+- Inclusão de testes
+```
+
+***
+
 # 🔁 Evolução do Sistema
 
 O principal objetivo do projeto é testar evolução incremental da SPEC.
@@ -333,6 +356,34 @@ Exemplos:
 ```
 
 ***
+# ✅ Estratégia de Implementação - Evoluções 1, 2 e 3
+## 🔧 Implementação Fase 1, 2 e 3 
+
+## Comando
+
+```bash
+/speckit.implement 
+```
+
+## Prompt
+
+```text
+Implemente as evoluções do LifeOS considerando:
+
+- Funcionalidades de Organização (Evolução 1)
+- Funcionalidades de inteligência (Evolução 2)
+- Funcionalidades de automação (Evolução 3)
+- Integração com a base existente
+
+Requisitos:
+- Manter consistência com arquitetura inicial
+- Garantir reaproveitamento de código
+- Aplicar boas práticas
+- Garantir testabilidade
+```
+
+***
+
 
 # 🧠 Testes Avançados
 
@@ -380,7 +431,7 @@ Este projeto permite validar na prática:
 * Evolução incremental orientada por SPEC
 * Redução de ambiguidades antes da implementação
 * Impacto de mudanças de requisitos
-* Qualidade do planejamento gerado por IA
+* Qualidade do planejamento gerado por IA com contexto estruturado
 
 O foco principal é entender como:
 
