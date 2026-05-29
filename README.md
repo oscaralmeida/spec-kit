@@ -159,7 +159,7 @@ Defina os princípios do sistema LifeOS.
 ## Comando
 
 ```bash
-/specify
+/speckit-specify
 ```
 
 ## Prompt
@@ -209,7 +209,7 @@ Usuários têm dificuldade em organizar tarefas diárias e metas de longo prazo 
 ## Comando
 
 ```bash
-/speckit.clarify
+/speckit-clarify
 ```
 
 ## Prompt
@@ -225,7 +225,7 @@ Esclareça como deve funcionar a ordenação das tarefas quando possuem a mesma 
 ## Comando
 
 ```bash
-/plan
+/speckit-plan 
 ```
 
 ## Prompt
@@ -248,7 +248,7 @@ Gerar o plano técnico do LifeOS considerando:
 ## Comando
 
 ```bash
-/tasks
+/speckit-tasks 
 ```
 
 ## Prompt
@@ -273,7 +273,7 @@ O principal objetivo do projeto é testar evolução incremental da SPEC.
 ## 🟡 Evolução 1 — Organização
 
 ```bash
-/specify
+/speckit-specify
 ```
 
 ```text
@@ -294,7 +294,7 @@ Adicionar organização de tarefas.
 ## 🔵 Evolução 2 — Inteligência
 
 ```bash
-/specify
+/speckit-specify
 ```
 
 ```text
@@ -314,7 +314,7 @@ Adicionar inteligência ao sistema.
 ## 🔴 Evolução 3 — Automação
 
 ```bash
-/specify
+/speckit-specify
 ```
 
 ```text
