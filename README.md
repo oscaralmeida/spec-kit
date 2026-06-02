@@ -219,10 +219,29 @@ Usuários têm dificuldade em organizar tarefas diárias e metas de longo prazo 
 - IA
 - Integrações externas
 
+# Escopo do sistema
+O sistema deve ser desenvolvido completo, incluindo:
+- Backend (API REST)
+- Frontend (interface web)
+- Integração entre as camadas
+
 # Arquitetura
 - Backend: API REST responsável pela lógica de negócio
 - Frontend: aplicação web para interação do usuário
 - Integração: frontend consome backend via HTTP
+
+# Interface (Frontend)
+- Exibir lista de tarefas ordenadas por prioridade e prazo
+- Permitir criação, edição e conclusão de tarefas
+- Permitir associação de tarefas com metas
+- Permitir filtragem por prioridade, prazo e tags
+- Interface simples e responsiva
+
+# Backend
+- API REST para gerenciamento de tarefas e metas
+- Endpoints para criação, edição, listagem e conclusão
+- Persistência de dados
+
 ```
 
 ***
