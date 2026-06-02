@@ -248,6 +248,19 @@ O sistema deve ser desenvolvido completo, incluindo:
 
 ```text
 Esclareça como deve funcionar a ordenação das tarefas quando possuem a mesma prioridade.
+
+Definir:
+
+- Qual critério secundário deve ser usado (ex: data de vencimento ou data de criação)
+- Como ordenar tarefas que tenham a mesma prioridade e mesma data
+- Qual comportamento quando a tarefa não tiver data de vencimento
+
+Requisitos:
+
+- A ordenação deve ser consistente (mesma entrada gera o mesmo resultado)
+- Deve funcionar da mesma forma no backend e no frontend
+
+Incluir exemplos simples de ordenação.
 ```
 
 ***
