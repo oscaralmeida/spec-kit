@@ -91,7 +91,7 @@ specify check
 Caso queira apenas testar sem instalar globalmente:
 
 ```bash
-uvx --from git+https://github.com/github/spec-kit.git specify init meu-projeto
+uvx --from git+https://github.com/github/spec-kit.git specify init --force life-os 
 ```
 
 ✅ Essa abordagem executa diretamente sem instalar no sistema.
