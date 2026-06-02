@@ -177,47 +177,13 @@ Usuários têm dificuldade em organizar tarefas diárias e metas de longo prazo 
 
 # Funcionalidades principais
 - Criar tarefa com título, descrição e prioridade (baixa, média, alta)
-- Listar tarefas ordenadas por prioridade
+- Listar tarefas ordenadas por prioridade e prazo
 - Marcar tarefa como concluída
 - Criar metas
 - Vincular tarefas a metas
 - Adicionar etiquetas (tags)
 - Adicionar data de vencimento
 - Criar subtarefas
-
-# Interface (Frontend)
-- Tela de listagem de tarefas
-- Tela de criação/edição de tarefas
-- Visualização de tarefas por prazo e prioridade
-- Interface simples para gerenciamento de tarefas
-
-# Backend
-- API REST para tarefas
-- Persistência de dados
-
-# Regras de negócio
-- Toda tarefa deve ter título
-- Tarefas concluídas não aparecem na lista padrão
-- Uma tarefa pertence a apenas uma meta
-- Uma meta pode ter várias tarefas
-- Subtarefas devem pertencer a uma tarefa principal
-- Tarefas com data devem ser ordenadas por prazo
-
-# Casos extremos
-- Tarefa sem título
-- Tarefas duplicadas
-- Grande volume de tarefas (>10k)
-
-# Requisitos não funcionais
-- Tempo de resposta < 500ms
-- Persistência obrigatória
-- Preparado para futuras funcionalidades com IA
-- Interface deve ser simples e responsiva
-- Comunicação via API REST
-
-# Fora do escopo
-- IA
-- Integrações externas
 
 # Escopo do sistema
 O sistema deve ser desenvolvido completo, incluindo:
@@ -239,9 +205,33 @@ O sistema deve ser desenvolvido completo, incluindo:
 
 # Backend
 - API REST para gerenciamento de tarefas e metas
-- Endpoints para criação, edição, listagem e conclusão
+- Endpoints para criação, edição, listagem e conclusão de tarefas
+- Endpoints para gerenciamento de metas
 - Persistência de dados
 
+# Regras de negócio
+- Toda tarefa deve ter título
+- Tarefas concluídas não aparecem na lista padrão
+- Uma tarefa pertence a apenas uma meta
+- Uma meta pode ter várias tarefas
+- Subtarefas devem pertencer a uma tarefa principal
+- Tarefas com data devem ser ordenadas por prazo
+
+# Casos extremos
+- Tarefa sem título
+- Tarefas duplicadas
+- Grande volume de tarefas (>10k)
+
+# Requisitos não funcionais
+- Tempo de resposta < 500ms
+- Persistência obrigatória
+- Preparado para futuras funcionalidades com IA
+- Interface deve ser simples e responsiva
+- Comunicação entre frontend e backend via API REST
+
+# Fora do escopo
+- Inteligência artificial (IA)
+- Integrações externas
 ```
 
 ***
