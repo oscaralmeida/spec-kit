@@ -407,6 +407,9 @@ Garantir:
 
 ## Prompt para implementar em fases
 ### 🟢 Fase 1 
+```bash
+/speckit.implement 
+```
 ```text
 Implementar a Phase 1 (Setup) do sistema LifeOS conforme definido nas tarefas.
 
@@ -431,6 +434,9 @@ Garantir:
 - Não avançar para fases seguintes
 ```
 ### 🟢 Fase 2 
+```bash
+/speckit.implement 
+```
 ```text
 Implementar a Phase 2 (Foundational) do sistema LifeOS.
 
@@ -463,6 +469,9 @@ Garantir:
 - Não iniciar user stories antes da conclusão
 ```
 ### 🟢 Fase 3 
+```bash
+/speckit.implement 
+```
 ```text
 Implementar a Phase 3 (User Story 1 — MVP) do sistema LifeOS.
 
@@ -496,6 +505,9 @@ Garantir:
 ```
 
 ### 🟢 Fase 4 
+```bash
+/speckit.implement 
+```
 ```text
 Implementar a Phase 4 (User Story 2) do sistema LifeOS.
 
@@ -526,6 +538,9 @@ Garantir:
 ```
 
 ### 🟢 Fase 5 
+```bash
+/speckit.implement 
+```
 ```text
 Implementar a Phase 5 (User Story 3) do sistema LifeOS.
 
@@ -555,6 +570,9 @@ Garantir:
 ```
 
 ### 🟢 Fase 6 
+```bash
+/speckit.implement 
+```
 ```text
 Implementar a Phase 6 (User Story 4) do sistema LifeOS.
 
@@ -583,6 +601,9 @@ Garantir:
 ```
 
 ### 🟢 Fase 7 
+```bash
+/speckit.implement 
+```
 ```text
 Implementar a Phase 7 (Polish) do sistema LifeOS.
 
