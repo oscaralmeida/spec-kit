@@ -278,12 +278,21 @@ Incluir exemplos simples de ordenação.
 ```text
 Gerar o plano técnico do LifeOS considerando:
 
-- API backend
-- Modelo de dados
-- Estrutura modular
-- Entidades de tarefas e metas
-- Endpoints REST
-- Preparação para evolução futura
+- Backend: API REST para gerenciamento de tarefas e metas
+- Frontend: aplicação web para interação do usuário
+- Integração entre frontend e backend via HTTP
+
+- Modelo de dados para tarefas, metas e subtarefas
+- Estrutura modular do sistema (separação backend e frontend)
+- Definição de entidades principais (tarefas e metas)
+- Definição dos principais endpoints REST
+- Preparação para evolução futura do sistema
+
+Requisitos:
+- Manter consistência com a SPEC definida
+- Garantir separação clara entre frontend e backend
+- Priorizar simplicidade e organização do código
+``
 ```
 
 ***
