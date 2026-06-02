@@ -371,20 +371,264 @@ Organização:
 /speckit.implement 
 ```
 
-## Prompt
+## Prompt para implementar todo o codigo de uma vez
 
 ```text
-Implemente o sistema LifeOS considerando:
+Implementar o sistema LifeOS seguindo as tarefas definidas e organizadas por fases.
 
-- Funcionalidades do MVP
-- Evolução 1 aplicada (organização de tarefas)
-- Backend com API REST
-- Persistência de dados
-- Estrutura modular
-- Inclusão de testes
+Requisitos:
+
+- Implementar o backend em Java (Spring Boot) conforme definido no plano
+- Implementar o frontend em React
+- Utilizar PostgreSQL como banco de dados em todos os ambientes
+- Garantir integração entre frontend e backend via API REST
+
+Execução:
+
+- Seguir a ordem das fases (Phase 1, Phase 2, Phase 3, etc.)
+- Concluir cada fase totalmente antes de avançar para a próxima
+- Implementar inicialmente as funcionalidades do MVP e Evolução 1
+
+Considerar:
+
+- Funcionalidades definidas na SPEC (tarefas, metas, tags e subtarefas)
+- Arquitetura definida (separação front-end e back-end)
+- Modelo de dados e endpoints definidos no plano
+- Tarefas geradas na fase de /speckit.tasks
+
+Garantir:
+
+- Código organizado e modular
+- Consistência entre backend, frontend e banco de dados
+- Inclusão de testes automatizados
+- Não alterar regras fora do escopo definido
+
+```
+
+## Prompt para implementar em fases
+### 🟢 Fase 1 
+```text
+Implementar a Phase 1 (Setup) do sistema LifeOS conforme definido nas tarefas.
+
+Requisitos:
+
+- Backend em Java (Spring Boot)
+- Frontend em React (Vite + TypeScript)
+- Banco de dados PostgreSQL via docker-compose
+
+Execução:
+
+- Criar estrutura inicial do backend e frontend
+- Configurar dependências e organização de pastas
+- Configurar docker-compose com PostgreSQL
+- Preparar ambiente de desenvolvimento
+
+Garantir:
+
+- Estrutura base do projeto funcional
+- Backend e frontend inicializados corretamente
+- Banco PostgreSQL disponível
+- Não avançar para fases seguintes
+```
+### 🟢 Fase 2 
+```text
+Implementar a Phase 2 (Foundational) do sistema LifeOS.
+
+Requisitos:
+
+- Backend em Java (Spring Boot)
+- Banco PostgreSQL obrigatório
+- Persistência com JPA e Flyway
+- Integração preparada para frontend
+
+Execução:
+
+- Implementar modelo de dados (Task, enums, entidades)
+- Configurar Flyway e schema inicial
+- Implementar repositórios e persistência
+- Implementar algoritmo de ordenação (TaskSortOrder)
+- Configurar infraestrutura base (CORS, OpenAPI, exception handler)
+
+Frontend:
+
+- Criar tipos e estrutura base
+- Implementar função de ordenação (taskSort)
+- Criar cliente HTTP base
+
+Garantir:
+
+- Persistência funcionando com PostgreSQL
+- Ordenação consistente entre backend e frontend
+- Testes unitários e integração da base
+- Não iniciar user stories antes da conclusão
+```
+### 🟢 Fase 3 
+```text
+Implementar a Phase 3 (User Story 1 — MVP) do sistema LifeOS.
+
+Objetivo:
+
+- Criar, listar e concluir tarefas
+
+Execução:
+
+Backend:
+- Implementar casos de uso (CreateTask, ListPendingTasks, CompleteTask)
+- Criar endpoints REST
+- Implementar DTOs
+
+Frontend:
+- Criar API client (tasks.ts)
+- Criar hooks (useTasks)
+- Criar componentes (TaskForm, TaskList, TaskItem)
+- Criar página principal (TasksPage)
+
+Integração:
+- Conectar frontend ao backend
+- Validar fluxo completo (criar → listar → concluir)
+
+Garantir:
+
+- Sistema funcional end-to-end
+- Persistência em PostgreSQL
+- Testes passando
+- Não implementar funcionalidades das próximas fases
+```
+
+### 🟢 Fase 4 
+```text
+Implementar a Phase 4 (User Story 2) do sistema LifeOS.
+
+Objetivo:
+
+- Edição de tarefas e gestão de prazos
+
+Execução:
+
+Backend:
+- Implementar UpdateTask, ListCompletedTasks, UncompleteTask
+- Criar novos endpoints
+
+Frontend:
+- Implementar edição de tarefas
+- Criar página de tarefas concluídas
+- Atualizar componentes existentes
+
+Integração:
+- Garantir reordenação após mudanças de prazo
+- Validar consistência com dados existentes
+
+Garantir:
+
+- Não quebrar funcionalidades do MVP
+- Integração total com Phase 3
+- Testes cobrindo novas regras
+```
+
+### 🟢 Fase 5 
+```text
+Implementar a Phase 5 (User Story 3) do sistema LifeOS.
+
+Objetivo:
+
+- Implementar metas e vínculo com tarefas
+
+Execução:
+
+Backend:
+- CRUD de Goal
+- Implementar vínculo Task ↔ Goal
+
+Frontend:
+- Criar telas de metas
+- Permitir vinculação de tarefas
+
+Integração:
+- Validar vínculo e desvínculo
+- Garantir consistência dos dados
+
+Garantir:
+
+- Não impactar funcionalidades anteriores
+- Funcionalidade totalmente integrada
+
+```
+
+### 🟢 Fase 6 
+```text
+Implementar a Phase 6 (User Story 4) do sistema LifeOS.
+
+Objetivo:
+
+- Tags, filtros e subtarefas
+
+Execução:
+
+Backend:
+- Implementar entidades Tag e Subtask
+- Implementar filtros na listagem
+
+Frontend:
+- Criar filtros
+- Implementar tags e subtarefas na UI
+
+Integração:
+- Validar filtros e visibilidade correta
+- Garantir que subtarefas não aparecem na lista principal
+
+Garantir:
+
+- Consistência com funcionalidades anteriores
+- Testes cobrindo cenários novos
+```
+
+### 🟢 Fase 7 
+```text
+Implementar a Phase 7 (Polish) do sistema LifeOS.
+
+Objetivo:
+
+- Finalizar sistema para uso completo
+
+Execução:
+
+Backend:
+- Implementar paginação
+- Ajustes de performance
+
+Frontend:
+- Melhorar responsividade
+- Feedback de loading e erro
+
+Integração:
+- Completar docker-compose (backend + frontend)
+- Validar fluxo completo
+
+Testes:
+- Implementar E2E com Playwright
+- Validar todos os fluxos
+
+Garantir:
+
+- Sistema completo e estável
+- Performance adequada
+- Cobertura de testes
 ```
 
 ***
+
+📌 **IMPORTANTE - ERROS COMUNS:**
+ - ❌ Usar o mesmo prompt para todas as fases
+   - **Resultado**:
+     - IA reescreve tudo
+     - perde contexto
+- ❌ Não limitar a fase
+  - **Resultado**:
+    - IA tenta implementar tudo de novo
+- ❌ Não falar de consistência
+  - **Resultado**:
+    - quebra o código existente
+
 
 # 🔁 Evolução do Sistema
 
