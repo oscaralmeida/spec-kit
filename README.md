@@ -103,8 +103,8 @@ uvx --from git+https://github.com/github/spec-kit.git specify init meu-projeto
 Após instalação:
 
 ```bash
-specify init lifeos-app 
-cd lifeos-app
+specify init life-os 
+cd life-os
 ```
 #### Obs.: Para usar uma IA direto coloque o parametro --ai claude | cursor | etc...
 
@@ -124,8 +124,8 @@ Isso cria a estrutura inicial do projeto com suporte ao fluxo SDD.
 # ⚙️ Setup Inicial
 
 ```bash
-specify init lifeos-app --ai claude
-cd lifeos-app
+specify init life-os
+cd life-os
 ````
 
 ***
