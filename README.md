@@ -218,6 +218,11 @@ Usuários têm dificuldade em organizar tarefas diárias e metas de longo prazo 
 # Fora do escopo
 - IA
 - Integrações externas
+
+# Arquitetura
+- Backend: API REST responsável pela lógica de negócio
+- Frontend: aplicação web para interação do usuário
+- Integração: frontend consome backend via HTTP
 ```
 
 ***
