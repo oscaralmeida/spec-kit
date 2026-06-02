@@ -181,12 +181,27 @@ Usuários têm dificuldade em organizar tarefas diárias e metas de longo prazo 
 - Marcar tarefa como concluída
 - Criar metas
 - Vincular tarefas a metas
+- Adicionar etiquetas (tags)
+- Adicionar data de vencimento
+- Criar subtarefas
+
+# Interface (Frontend)
+- Tela de listagem de tarefas
+- Tela de criação/edição de tarefas
+- Visualização de tarefas por prazo e prioridade
+- Interface simples para gerenciamento de tarefas
+
+# Backend
+- API REST para tarefas
+- Persistência de dados
 
 # Regras de negócio
 - Toda tarefa deve ter título
 - Tarefas concluídas não aparecem na lista padrão
 - Uma tarefa pertence a apenas uma meta
 - Uma meta pode ter várias tarefas
+- Subtarefas devem pertencer a uma tarefa principal
+- Tarefas com data devem ser ordenadas por prazo
 
 # Casos extremos
 - Tarefa sem título
@@ -197,6 +212,8 @@ Usuários têm dificuldade em organizar tarefas diárias e metas de longo prazo 
 - Tempo de resposta < 500ms
 - Persistência obrigatória
 - Preparado para futuras funcionalidades com IA
+- Interface deve ser simples e responsiva
+- Comunicação via API REST
 
 # Fora do escopo
 - IA
