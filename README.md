@@ -292,8 +292,38 @@ Requisitos:
 - Manter consistência com a SPEC definida
 - Garantir separação clara entre frontend e backend
 - Priorizar simplicidade e organização do código
-``
 ```
+
+📌 **IMPORTANTE:**
+Após gerar o planejamento, revise o resultado. Caso ele não esteja alinhado com o objetivo do projeto, ajuste o prompt e execute novamente o comando de planejamento.
+Por exemplo, neste caso, como a linguagem não foi especificada inicialmente, o plano gerado utilizou Python. No entanto, como o objetivo é utilizar Java com PostgreSQL, é necessário refinar o planejamento.
+Para isso, utilize novamente o comando /speckit.plan, informando explicitamente a tecnologia desejada no prompt.
+   
+```text
+Atualizar o plano técnico do LifeOS para utilizar Java no backend ao invés de Python.
+
+Requisitos:
+
+- Backend deve ser implementado em Java (preferencialmente Spring Boot)
+- Banco de dados deve ser PostgreSQL em todos os ambientes (inclusive no MVP)
+- Manter API REST e contratos já definidos
+- Manter arquitetura definida na SPEC (separação entre frontend e backend)
+- Preservar modelo de dados e endpoints planejados
+
+Manter:
+
+- Frontend conforme definido (React)
+- Integração entre frontend e backend via HTTP
+- Regras de negócio já definidas
+
+Garantir:
+
+- Compatibilidade com o restante do sistema
+- Estrutura modular e escalável
+- Coerência entre backend, frontend e banco de dados
+```
+ 
+
 
 ***
 
@@ -311,9 +341,24 @@ Requisitos:
 Gerar tarefas de desenvolvimento do LifeOS.
 
 Requisitos:
-- Tarefas pequenas e independentes
-- Incluir backend e persistência
-- Incluir testes automatizados
+
+- Tarefas pequenas, claras e independentes
+- Separar tarefas de backend (Java + Spring Boot) e frontend (React)
+- Incluir persistência utilizando PostgreSQL em todos os ambientes
+- Incluir testes automatizados para backend e frontend
+- Garantir integração entre frontend e backend via API REST
+
+Considerar:
+
+- Funcionalidades definidas na SPEC (tarefas, metas, tags, subtarefas)
+- Arquitetura definida (separação frontend e backend)
+- Endpoints REST planejados
+- Modelo de dados definido no plano técnico
+
+Organização:
+
+- Agrupar tarefas por camada (backend, frontend, integração, testes)
+- Indicar dependências entre tarefas quando necessário
 ```
 
 ***
