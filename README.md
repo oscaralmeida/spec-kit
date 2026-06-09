@@ -691,15 +691,11 @@ O sistema já permite:
 
 ***
 
-## 🔧 Implementação Fase 1 
-
-## Comando
+## 🔧 Implementação da Evolução 1 
 
 ```bash
 /speckit.implement 
 ```
-
-## Prompt
 
 ```text
 Implementar a evolução do sistema LifeOS referente às funcionalidades de organização de tarefas.
@@ -777,15 +773,11 @@ O sistema já permite:
 ```
 
 
-## 🔧 Implementação Fase 2
-
-## Comando
+## 🔧 Implementação da Evolução 2
 
 ```bash
 /speckit.implement 
 ```
-
-## Prompt
 
 ```text
 Implementar a evolução do sistema LifeOS referente às funcionalidades de inteligência, mantendo a base já existente.
