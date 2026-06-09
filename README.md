@@ -15,9 +15,7 @@ Spec-Driven Development é uma abordagem onde:
 ### Fluxo padrão:
 
 ```
-
 SPEC → PLAN → TASKS → IMPLEMENTAÇÃO
-
 ````
 
 ---
@@ -655,8 +653,10 @@ Garantir:
 
 O principal objetivo do projeto é testar evolução incremental da SPEC.
 
-👉 Sempre vamos usar:
+👉 Sempre vamos usar **ESPECIFICAÇÃO → PLANEJAMENTO → TAREFAS → IMPLEMENTAÇÃO**
+```
 /specify → /plan → /tasks → /implement
+````
 
 
 ***
