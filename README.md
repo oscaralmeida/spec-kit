@@ -661,7 +661,7 @@ O principal objetivo do projeto é testar evolução incremental da SPEC.
 
 ***
 
-## 🟡 Evolução 1 — Organização
+## 🔵 Evolução 1 — Organização
 
 ```bash
 /speckit-specify
@@ -692,7 +692,7 @@ O sistema já permite:
 - Não alterar o comportamento atual de criação, listagem e conclusão de tarefas
 - Garantir integração com a arquitetura existente (backend + frontend)
 ```
-##  Planejamento da Evolução 1
+##  🔵 Planejamento da Evolução 1
 
 ```bash
 /speckit.plan 
@@ -741,7 +741,7 @@ Garantir:
 - Preparação para futuras evoluções do sistema
 ```
 
-##  Tarefas da Evolução 1
+##  🔵 Tarefas da Evolução 1
 
 ```bash
 /speckit.tasks  
@@ -788,7 +788,7 @@ Garantir:
 - Integração consistente com funcionalidades existentes
 ```
 
-## Implementação da Evolução 1 
+## 🔵 Implementação da Evolução 1 
 
 ```bash
 /speckit.implement 
@@ -827,92 +827,6 @@ Garantir:
 - Compatibilidade total com funcionalidades existentes
 - Não alterar comportamentos anteriores fora do escopo
 - Código organizado, modular e consistente
-- Inclusão de testes automatizados para as novas funcionalidades
-```
-
-***
-
-## 🔵 Evolução 2 — Inteligência
-
-```bash
-/speckit-specify
-```
-
-```text
-Evoluir o sistema LifeOS adicionando funcionalidades de inteligência para apoio na organização das tarefas, mantendo compatibilidade com as funcionalidades já implementadas.
-
-# Contexto atual
-O sistema já permite:
-- Criar, listar e concluir tarefas
-- Organizar tarefas com metas, tags, prazos e subtarefas
-
-# Novas funcionalidades
-- Sugerir automaticamente as tarefas do dia com base em prioridade e prazo
-- Identificar tarefas atrasadas (data de vencimento menor que a data atual)
-- Recomendar tarefas de foco com base em prioridade e proximidade do prazo
-
-# Regras de negócio
-- Tarefas atrasadas devem ter maior prioridade nas sugestões
-- Tarefas com data de vencimento mais próxima devem ser priorizadas
-- Tarefas concluídas não devem ser consideradas nas sugestões
-- As recomendações devem ser baseadas apenas nos dados existentes (sem uso de IA externa neste momento)
-
-# Requisitos
-- Manter compatibilidade com o comportamento atual do sistema
-- Não alterar funcionalidades existentes (criação, listagem, metas, tags, subtarefas)
-- Implementar as funcionalidades de forma incremental
-- Garantir integração com a arquitetura existente (backend + frontend)
-- As sugestões devem ser determinísticas (mesma entrada gera o mesmo resultado)
-
-# Fora do escopo (nesta fase)
-- Uso de modelos de IA externos (LLMs)
-- Machine learning ou treinamento de modelo
-```
-
-
-
-
-## 🔧 Implementação da Evolução 2
-
-```bash
-/speckit.implement 
-```
-
-```text
-Implementar a evolução do sistema LifeOS referente às funcionalidades de inteligência, mantendo a base já existente.
-
-Contexto:
-
-- O sistema já possui funcionalidades implementadas de tarefas, organização (tags, prazos, subtarefas) e metas
-- Esta implementação deve ser incremental e integrada ao sistema atual
-
-Requisitos:
-
-- Backend em Java (Spring Boot)
-- Frontend em React
-- Banco de dados PostgreSQL
-- Integração via API REST entre frontend e backend
-
-Execução:
-
-- Implementar apenas as funcionalidades da Evolução 2 (sugestão de tarefas do dia, identificação de tarefas atrasadas e recomendações de foco)
-- Basear as funcionalidades em regras determinísticas (sem uso de IA externa)
-- Reutilizar ao máximo o código existente
-- Integrar as novas funcionalidades com os dados já existentes (tarefas, metas, prazos, prioridades)
-
-Considerar:
-
-- Regras definidas na SPEC da evolução (prioridade de tarefas atrasadas, ordenação por prazo, etc.)
-- Arquitetura existente (separação backend e frontend)
-- Modelo de dados atual
-- Funcionalidades já implementadas nas fases anteriores
-
-Garantir:
-
-- Compatibilidade total com funcionalidades existentes
-- Não alterar comportamentos fora do escopo desta evolução
-- Código modular e organizado
-- Coerência entre backend e frontend (mesmas regras de sugestão)
 - Inclusão de testes automatizados para as novas funcionalidades
 ```
 
