@@ -664,16 +664,77 @@ O principal objetivo do projeto é testar evolução incremental da SPEC.
 ```
 
 ```text
-Adicionar organização de tarefas.
+Evoluir o sistema LifeOS adicionando funcionalidades de organização de tarefas, mantendo compatibilidade com o que já foi implementado.
 
-# Funcionalidades
-- Etiquetas (tags)
-- Datas de vencimento
-- Subtarefas
+# Contexto atual
+O sistema já permite:
+- Criar tarefas
+- Listar tarefas
+- Concluir tarefas
 
-# Regras
-- Subtarefas pertencem a uma tarefa
-- Ordenação por prazo quando houver data
+# Novas funcionalidades
+- Adicionar etiquetas (tags) às tarefas
+- Definir data de vencimento para tarefas
+- Criar subtarefas associadas a uma tarefa principal
+
+# Regras de negócio
+- Subtarefas devem pertencer a uma única tarefa principal
+- Subtarefas não devem aparecer na listagem principal de tarefas
+- Tarefas com data de vencimento devem ser ordenadas por prazo
+- Tarefas sem data de vencimento devem aparecer após as tarefas com prazo
+
+# Requisitos
+- Manter compatibilidade com funcionalidades já existentes
+- Não alterar o comportamento atual de criação, listagem e conclusão de tarefas
+- Garantir integração com a arquitetura existente (backend + frontend)
+```
+
+***
+
+## 🔧 Implementação Fase 1 
+
+## Comando
+
+```bash
+/speckit.implement 
+```
+
+## Prompt
+
+```text
+Implementar a evolução do sistema LifeOS referente às funcionalidades de organização de tarefas.
+
+Contexto:
+
+- O sistema já possui funcionalidades básicas implementadas (criar, listar e concluir tarefas)
+- Esta implementação deve ser incremental, sem reescrever ou quebrar funcionalidades existentes
+
+Requisitos:
+
+- Backend em Java (Spring Boot)
+- Frontend em React
+- Banco de dados PostgreSQL
+- Integração entre frontend e backend via API REST
+
+Execução:
+
+- Implementar apenas as funcionalidades da Evolução 1 (tags, data de vencimento e subtarefas)
+- Reutilizar ao máximo o código existente
+- Integrar as novas funcionalidades com as já implementadas
+- Seguir as tarefas definidas no plano para esta evolução
+
+Considerar:
+
+- Regras de negócio definidas na SPEC da evolução
+- Arquitetura existente (separação frontend e backend)
+- Modelo de dados já implementado
+
+Garantir:
+
+- Compatibilidade total com funcionalidades existentes
+- Não alterar comportamentos anteriores fora do escopo
+- Código organizado, modular e consistente
+- Inclusão de testes automatizados para as novas funcionalidades
 ```
 
 ***
@@ -685,43 +746,38 @@ Adicionar organização de tarefas.
 ```
 
 ```text
-Adicionar inteligência ao sistema.
+Evoluir o sistema LifeOS adicionando funcionalidades de inteligência para apoio na organização das tarefas, mantendo compatibilidade com as funcionalidades já implementadas.
 
-# Funcionalidades
-- Sugestão automática de tarefas do dia
-- Identificação de tarefas atrasadas
-- Recomendações de foco
+# Contexto atual
+O sistema já permite:
+- Criar, listar e concluir tarefas
+- Organizar tarefas com metas, tags, prazos e subtarefas
 
-# Regras
-- Tarefas atrasadas devem ter maior prioridade
-```
+# Novas funcionalidades
+- Sugerir automaticamente as tarefas do dia com base em prioridade e prazo
+- Identificar tarefas atrasadas (data de vencimento menor que a data atual)
+- Recomendar tarefas de foco com base em prioridade e proximidade do prazo
 
-***
-
-## 🔴 Evolução 3 — Automação
-
-```bash
-/speckit-specify
-```
-
-```text
-Adicionar automações ao LifeOS.
-
-# Funcionalidades
-- Definição de regras automáticas
-
-Exemplos:
-- Se tarefa atrasar → aumentar prioridade
-- Se meta estiver próxima → priorizar tarefas associadas
+# Regras de negócio
+- Tarefas atrasadas devem ter maior prioridade nas sugestões
+- Tarefas com data de vencimento mais próxima devem ser priorizadas
+- Tarefas concluídas não devem ser consideradas nas sugestões
+- As recomendações devem ser baseadas apenas nos dados existentes (sem uso de IA externa neste momento)
 
 # Requisitos
-- Regras devem ser configuráveis
-- Execução automática das regras
+- Manter compatibilidade com o comportamento atual do sistema
+- Não alterar funcionalidades existentes (criação, listagem, metas, tags, subtarefas)
+- Implementar as funcionalidades de forma incremental
+- Garantir integração com a arquitetura existente (backend + frontend)
+- As sugestões devem ser determinísticas (mesma entrada gera o mesmo resultado)
+
+# Fora do escopo (nesta fase)
+- Uso de modelos de IA externos (LLMs)
+- Machine learning ou treinamento de modelo
 ```
 
-***
-# ✅ Estratégia de Implementação - Evoluções 1, 2 e 3
-## 🔧 Implementação Fase 1, 2 e 3 
+
+## 🔧 Implementação Fase 2
 
 ## Comando
 
@@ -732,58 +788,41 @@ Exemplos:
 ## Prompt
 
 ```text
-Implemente as evoluções do LifeOS considerando:
+Implementar a evolução do sistema LifeOS referente às funcionalidades de inteligência, mantendo a base já existente.
 
-- Funcionalidades de Organização (Evolução 1)
-- Funcionalidades de inteligência (Evolução 2)
-- Funcionalidades de automação (Evolução 3)
-- Integração com a base existente
+Contexto:
+
+- O sistema já possui funcionalidades implementadas de tarefas, organização (tags, prazos, subtarefas) e metas
+- Esta implementação deve ser incremental e integrada ao sistema atual
 
 Requisitos:
-- Manter consistência com arquitetura inicial
-- Garantir reaproveitamento de código
-- Aplicar boas práticas
-- Garantir testabilidade
-```
 
-***
+- Backend em Java (Spring Boot)
+- Frontend em React
+- Banco de dados PostgreSQL
+- Integração via API REST entre frontend e backend
 
+Execução:
 
-# 🧠 Testes Avançados
+- Implementar apenas as funcionalidades da Evolução 2 (sugestão de tarefas do dia, identificação de tarefas atrasadas e recomendações de foco)
+- Basear as funcionalidades em regras determinísticas (sem uso de IA externa)
+- Reutilizar ao máximo o código existente
+- Integrar as novas funcionalidades com os dados já existentes (tarefas, metas, prazos, prioridades)
 
-## Mudança de Regra
+Considerar:
 
-```text
-Alterar o sistema de prioridade de fixo (baixa, média, alta) para dinâmico (0 a 100)
-```
+- Regras definidas na SPEC da evolução (prioridade de tarefas atrasadas, ordenação por prazo, etc.)
+- Arquitetura existente (separação backend e frontend)
+- Modelo de dados atual
+- Funcionalidades já implementadas nas fases anteriores
 
-***
+Garantir:
 
-## Conflito de Requisitos
-
-```text
-Sistema deve ser altamente performático e garantir consistência total dos dados
-```
-
-***
-
-## Escala
-
-```text
-Sistema deve suportar até 1 milhão de tarefas por usuário
-```
-
-***
-
-# 📂 Estrutura Esperada
-
-```
-.specify/
-specs/
-  lifeos-mvp/
-  lifeos-organizacao/
-  lifeos-inteligencia/
-  lifeos-automacao/
+- Compatibilidade total com funcionalidades existentes
+- Não alterar comportamentos fora do escopo desta evolução
+- Código modular e organizado
+- Coerência entre backend e frontend (mesmas regras de sugestão)
+- Inclusão de testes automatizados para as novas funcionalidades
 ```
 
 ***
@@ -800,17 +839,6 @@ Este projeto permite validar na prática:
 O foco principal é entender como:
 
 > **A especificação guia todo o ciclo de desenvolvimento**
-
-***
-
-# 🚀 Próximos Passos
-
-Possíveis evoluções:
-
-* Arquitetura com microsserviços
-* Integrações com APIs externas
-* Engine de regras avançada
-* Assistente inteligente com IA
 
 ***
 
