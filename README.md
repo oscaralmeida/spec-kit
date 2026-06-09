@@ -689,8 +689,6 @@ O sistema já permite:
 - Garantir integração com a arquitetura existente (backend + frontend)
 ```
 
-***
-
 ## 🔧 Implementação da Evolução 1 
 
 ```bash
