@@ -14,9 +14,7 @@ Spec-Driven Development é uma abordagem onde:
 
 ### Fluxo padrão:
 
-```
-SPEC → PLAN → TASKS → IMPLEMENTAÇÃO
-````
+<img width="624" height="951" alt="image" src="https://github.com/user-attachments/assets/b1909cdc-7014-4f7f-a050-d281b2d04b76" />
 
 ---
 
