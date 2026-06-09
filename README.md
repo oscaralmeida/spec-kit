@@ -770,6 +770,102 @@ O sistema já permite:
 - Machine learning ou treinamento de modelo
 ```
 
+##  Planejamento da Evolução 2
+
+```bash
+/speckit.plan 
+```
+
+```text
+Gerar o plano técnico para a evolução do sistema LifeOS referente à organização de tarefas.
+
+Contexto:
+
+- O sistema já possui funcionalidades básicas implementadas (criar, listar e concluir tarefas)
+- Esta evolução deve ser incremental, sem alterar ou reimplementar funcionalidades existentes
+
+Requisitos:
+
+- Backend em Java (Spring Boot)
+- Frontend em React
+- Banco de dados PostgreSQL
+- Integração entre frontend e backend via API REST
+
+Escopo da evolução:
+
+- Adicionar suporte a etiquetas (tags)
+- Adicionar data de vencimento às tarefas
+- Adicionar subtarefas vinculadas a uma tarefa principal
+
+Considerar:
+
+- Arquitetura existente (separação backend e frontend)
+- Modelo de dados já implementado
+- Regras definidas na SPEC da evolução
+- Necessidade de reaproveitamento de código existente
+
+Definir no plano:
+
+- Alterações no modelo de dados (novas entidades ou campos)
+- Novos endpoints ou ajustes nos existentes
+- Fluxo de integração frontend ↔ backend
+- Impactos nas funcionalidades atuais (sem quebra de compatibilidade)
+- Estratégia de implementação incremental
+
+Garantir:
+
+- Consistência com a SPEC da evolução
+- Estrutura modular e escalável
+- Preparação para futuras evoluções do sistema
+```
+
+##  Tarefas da Evolução 2
+
+```bash
+/speckit.tasks  
+```
+
+```text
+Gerar tarefas de desenvolvimento para a evolução do sistema LifeOS (organização de tarefas).
+
+Contexto:
+
+- O sistema já possui funcionalidades básicas implementadas (criar, listar e concluir tarefas)
+- Esta evolução deve ser incremental, sem alterar funcionalidades existentes
+
+Requisitos:
+
+- Backend em Java (Spring Boot)
+- Frontend em React
+- Banco de dados PostgreSQL
+- Integração via API REST
+
+Escopo da evolução:
+
+- Implementar etiquetas (tags)
+- Implementar data de vencimento
+- Implementar subtarefas
+
+Organização:
+
+- Dividir tarefas em backend, frontend, integração e testes
+- Agrupar tarefas por funcionalidade (tags, prazos, subtarefas)
+- Indicar dependências entre tarefas quando necessário
+
+Considerar:
+
+- Reaproveitamento do código já existente
+- Modelo de dados atual
+- Endpoints já implementados
+
+Garantir:
+
+- Tarefas pequenas, claras e independentes
+- Não modificar comportamentos fora do escopo
+- Inclusão de testes automatizados para novas funcionalidades
+- Integração consistente com funcionalidades existentes
+```
+
 
 ## 🔧 Implementação da Evolução 2
 
