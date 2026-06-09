@@ -829,6 +829,185 @@ Garantir:
 - Código organizado, modular e consistente
 - Inclusão de testes automatizados para as novas funcionalidades
 ```
+***
+
+## 🚀 ✅ Evolução 2 — UX + experiência do usuário
+
+```bash
+/speckit-specify
+```
+
+```text
+Evoluir o sistema LifeOS modernizando a interface de usuário, introduzindo uma visualização em formato de calendário para melhorar a usabilidade na organização de tarefas.
+
+# Contexto atual
+O sistema já permite:
+- Criar, listar e concluir tarefas
+- Organizar tarefas com metas, tags, prazos e subtarefas
+- Utilizar funcionalidades de sugestão e priorização
+
+# Novas funcionalidades
+
+- Exibir tarefas em formato de calendário (diário, semanal e mensal)
+- Visualizar tarefas distribuídas por data de vencimento
+- Permitir navegação entre períodos (dias, semanas e meses)
+- Visualizar tarefas diretamente no calendário
+- Permitir criação e edição de tarefas a partir do calendário
+
+# Regras de negócio
+
+- Apenas tarefas com data de vencimento devem aparecer no calendário
+- Tarefas sem data não devem aparecer na visualização de calendário
+- Tarefas devem ser exibidas respeitando prioridade e horário (se aplicável)
+- Tarefas concluídas podem aparecer com visual diferenciado (ex: cor ou estilo)
+
+# Requisitos
+
+- Manter compatibilidade com funcionalidades já existentes
+- Não alterar o comportamento atual das funcionalidades fora desta evolução
+- Garantir integração com a arquitetura existente (backend + frontend)
+- Interface deve ser intuitiva, responsiva e focada em experiência do usuário
+
+# Fora do escopo (nesta fase)
+
+- Sincronização com calendários externos (Google, Outlook)
+- Notificações em tempo real
+
+```
+##  🚀 ✅ Planejamento da Evolução 2
+
+```bash
+/speckit.plan 
+```
+
+```text
+Gerar o plano técnico para a evolução do sistema LifeOS focada na modernização da interface com visualização em calendário.
+
+Contexto:
+
+- O sistema já possui backend e frontend estruturados
+- Esta evolução deve ser incremental e focada em frontend, com pequenos ajustes no backend
+
+Requisitos:
+
+- Backend em Java (Spring Boot)
+- Frontend em React
+- Banco PostgreSQL
+
+Escopo da evolução:
+
+- Implementar visualização de tarefas em formato de calendário
+- Permitir navegação entre datas
+- Exibir tarefas por data de vencimento
+
+Considerar:
+
+- Arquitetura existente (separação frontend/backend)
+- Modelo de dados atual (uso de due_date)
+- APIs já existentes para tarefas
+- Possível necessidade de ajuste em endpoints para filtros por data
+
+Definir no plano:
+
+- Estratégia de implementação do calendário (biblioteca ou custom)
+- Alterações necessárias no frontend
+- Ajustes mínimos no backend (se necessário)
+- Integração da nova interface com dados existentes
+
+Garantir:
+
+- Reutilização máxima das APIs existentes
+- Baixo impacto no backend
+- Interface moderna, simples e performática
+```
+
+##  🚀 ✅ Tarefas da Evolução 2
+
+```bash
+/speckit.tasks  
+```
+
+```text
+Gerar tarefas de desenvolvimento para a evolução do LifeOS focada na interface de calendário.
+
+Contexto:
+
+- O sistema já possui funcionalidades completas de backend e frontend
+- Esta evolução é focada principalmente em frontend (UX/UI)
+
+Requisitos:
+
+- Frontend em React
+- Backend em Java (Spring Boot)
+- Banco PostgreSQL
+
+Escopo:
+
+- Implementar visualização em calendário
+- Navegação entre datas
+- Exibição de tarefas por dia
+
+Organização:
+
+- Dividir tarefas em frontend, backend (se necessário) e testes
+- Priorizar tarefas de UI e experiência do usuário
+- Agrupar tarefas por funcionalidade (calendário, navegação, integração)
+
+Considerar:
+
+- Reutilização das APIs existentes
+- Uso do campo due_date das tarefas
+- Consistência com funcionalidades atuais
+
+Garantir:
+
+- Tarefas pequenas e independentes
+- Integração com funcionalidades existentes
+- Inclusão de testes e validação de interface
+```
+
+## 🚀 ✅ Implementação da Evolução 2 
+
+```bash
+/speckit.implement 
+```
+
+```text
+Implementar a evolução do sistema LifeOS referente à modernização da interface com visualização em calendário.
+
+Contexto:
+
+- O sistema já possui funcionalidades completas (tarefas, organização e inteligência)
+- Esta implementação deve ser incremental e sem impacto nas funcionalidades existentes
+
+Requisitos:
+
+- Backend em Java (Spring Boot)
+- Frontend em React
+- Banco PostgreSQL
+- Integração via API REST
+
+Execução:
+
+- Implementar apenas a funcionalidade de visualização em calendário
+- Utilizar o campo due_date para posicionar tarefas no calendário
+- Permitir navegação entre períodos (dia, semana e mês)
+- Integrar a interface com as APIs existentes
+
+Considerar:
+
+- Arquitetura atual do sistema
+- Componentes existentes de tarefas
+- Regras definidas na SPEC
+
+Garantir:
+
+- Compatibilidade total com funcionalidades existentes
+- Não alterar comportamentos fora do escopo
+- Interface moderna, responsiva e intuitiva
+- Código reutilizável e modular
+- Inclusão de testes para a nova interface
+```
 
 ***
 
