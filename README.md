@@ -1026,6 +1026,7 @@ A SPEC descreve a mudança desejada, e não o sistema inteiro.
 ### 🧩 Inicializando o projeto
 ```bash
 specify init projeto-nome
+cd projeto-nome
 ````
 
 ### 🧩 Definindo o projeto
