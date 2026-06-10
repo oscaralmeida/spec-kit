@@ -1009,6 +1009,74 @@ Garantir:
 
 ***
 
+# 🟦 Sistema Legado
+
+## 🎯 Estratégia
+
+Em sistemas legado, o Spec Kit deve ser usado de forma incremental, focando em uma evolução por vez.
+A SPEC descreve a mudança desejada, e não o sistema inteiro.
+
+## 🔁 Fluxo recomendado
+
+1. Inicializar o Spec Kit no projeto existente
+2. Definição do projeto existente
+
+   <img width="633" height="951" alt="image" src="https://github.com/user-attachments/assets/d14b077d-8719-48f6-bf1e-250df21e1df2" />
+
+### 🧩 Inicializando o projeto
+```bash
+specify init projeto-nome
+````
+
+### 🧩 Definindo o projeto
+```bash
+/speckit.constitution
+```
+
+```text
+Definir a Constitution do projeto considerando que se trata de um sistema legado já existente.
+
+Objetivo:
+
+- Analisar completamente o projeto atual
+- Considerar toda a estrutura existente (backend, frontend, banco de dados e integrações)
+- Levantar padrões arquiteturais, tecnologias utilizadas e organização do código
+
+Diretrizes obrigatórias:
+
+- Não assumir arquitetura nova sem considerar a existente
+- Identificar e respeitar padrões já utilizados no projeto
+- Reutilizar código existente sempre que possível
+- Evitar reescrita desnecessária de funcionalidades
+
+Definir princípios para o projeto:
+
+- Manter compatibilidade com funcionalidades existentes
+- Seguir a arquitetura atual do sistema
+- Garantir separação de responsabilidades (ex: backend, frontend, domínio)
+- Priorizar simplicidade e evolução incremental
+- Garantir testabilidade das mudanças
+- Manter consistência entre novas funcionalidades e código existente
+- Respeitar padrões de API e integração já definidos
+- Garantir que todas as evoluções sejam seguras e não causem regressões
+
+Regras de desenvolvimento:
+
+- Toda nova funcionalidade deve ser tratada como uma evolução incremental
+- Alterações devem ser pequenas, testáveis e controladas
+- Não alterar comportamento existente fora do escopo da especificação
+- Garantir consistência entre backend e frontend
+
+Resultado esperado:
+
+- Gerar uma Constitution que represente fielmente o sistema atual
+- Criar diretrizes claras que orientem todas as próximas especificações (/specify, /plan, /tasks, /implement)
+
+```
+
+
+***
+
 # ✅ Conclusão
 
 Este projeto permite validar na prática:
